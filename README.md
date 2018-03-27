@@ -39,6 +39,7 @@ try to wash more dishes as you can.
 - Unreal Enginw 4.15.3
 - built for Oculus Rift
 - 2 hand supported (2 motion controller)
+- work well with one hand
 - but not work very well yet?
 
 ## what to improve
