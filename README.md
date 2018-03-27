@@ -1,22 +1,48 @@
-﻿# Unreal Engine 4 VR Intro Starter Project READ ME
+﻿# Unreal Kitchen Project
 
-This project is part of [Udacity](https://www.udacity.com "Udacity - Be in demand")'s [Unreal Engine 4 VR Nanodegree](https://www.udacity.com)
+**Unreal Kitchen Project** is my first VR project that I've built from scratch.
+The player need to wash all dishes by putting them into the sink.
+the more dishes you washed, the more they come.
+try to wash more dishes as you can.
+....
+..
+.
+#### Controllers
+- B for spawn the plate for fun before start / call menu
+- A for click
+- Grab for grab the plate
+- START
+- EXIT
+- RESUME
+- RESTART
 
-This project is your first chance to make a game within Unreal Engine 4 for either standing or room-scale VR. You’ll need to utilize motion controllers to build a kitchen-themed interaction game, and you’ll use functions, physics, blueprint communication, and audio to create an immersive experience. Spawn messy dishes and get them into the sink as quickly as possible!
+## Details
+#### The Design
+- I have use the sphere instead of hands to minimize the project and its look nice
+- kinda change it to Dark-Pink theme
+- the place will be able to move after go into the sink (on purpose) because I think it feel better!
+- however its will be removed from the level within the specific time
+- just stand at the spawn point and you'll be able to reach for all the plates
+- able to restart
 
+#### Timing system (timer)
+- Basically you start with a fixed amount of time
+- after you washed a dish, you'll get some extra time
+- you'll get lower rate of time depends on the amount of the dishes scores
+- the game will end when the time reach 0
+- the score is the number of dish you have washed
 
+#### 3rd Party assets
+- Sound and the room that come with the given package
 
-## Necessary Software
-- [Epic Games Launcher, Unreal Engine 4.14 or 4.15](https://www.unrealengine.com/en-US/blog)
-- [SteamVR](http://store.steampowered.com/steamvr) OR [Oculus Home](https://www.oculus.com/setup/)
-
-<img src="https://d17h27t6h515a5.cloudfront.net/topher/2017/November/5a0ef225_epiclauncher/epiclauncher.png" width="50%"/>
-
-## New To Github?
-
-Github is one of the best ways for software developers to store their code and easily make changes that are then tracked and easily shareable with your team of developers. If you would like to learn more about Github, Udacity offers [a free course on how to use Github](https://www.udacity.com/course/how-to-use-git-and-github--ud775). For the puposes of the VR Nanodgree, you will simply need to download this project by:
-1. Clicking **"Clone or download"**
-2. Clicking **"Download ZIP"**
-- unreal 4.15.3
+## more details
+- Unreal Enginw 4.15.3
 - built for Oculus Rift
-- 
+- 2 hand supported (2 motion controller)
+- but not work very well yet?
+
+## what to improve
+- can't release two object from both hand at the same time
+- not fully release object
+- massive BP (it could be much less than this)
+- some plates go through table
